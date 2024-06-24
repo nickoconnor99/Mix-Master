@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: 'cocktail/:id',
         element: <Cocktail></Cocktail>,
-        loader: singleCocktailLoader
+        loader: singleCocktailLoader(queryClient)
       },
       {
         path: 'newsletter',
